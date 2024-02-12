@@ -1,0 +1,37 @@
+Un tipo di dato è un insieme di dati su cui vengono definiti degli operatori
+
+Char: numberico, 8 byte ?? o 8 bit??
+int: numerico, dimensione dipende dalla macchina. 2 o 4 byte
+short int: metà di un intero
+long int: doppio di un intero
+
+--
+float x;
+int y;
+y = 3;
+x = y;
+
+==> Conversione di tipo automatica (type-casting) senza perdita di dati.
+
+"Implicit casting with narrowing" significa "Type-casting implicito con perdita di informazioni"
+
+Un oggetto è un area di memoria a cui viene assegnato un tipo.
+
+Una variabile è un oggetto a cui è associato un identificatore.
+int a; ==> "a" è una variabile. L'oggetto è l'intero che si chiama "a" che ha tipo int.
+
+La dichiarazione introduce un nuovo nome.
+La definizione introduce un nuovo nome e l'oggetto ad asso assegnato.
+int a; è sia una dichiarazione che definizione.
+
+È possibile fare una dichiarazione ad un oggetto già definito.
+Per esempio, quando si chiama una funzione, si dichiara un oggetto senza definirlo: si occuperà il chiamante di definire
+la variabile e passare il riferimento alla funzione.
+
+Un "tipo" è l'insieme di possibili valori che quell'oggetto può assumere.
+
+L'inizializzazione di un oggetto
+int b = 3.5; // NON è un assegnazione ma un inizializzazione.
+
+int b{4}; // da c14 in poi, inizializzazione che limiti il narrowing.
+int b{4.5}; // ==> darà errore.
