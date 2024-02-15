@@ -35,3 +35,23 @@ int b = 3.5; // NON è un assegnazione ma un inizializzazione.
 
 int b{4}; // da c14 in poi, inizializzazione che limiti il narrowing.
 int b{4.5}; // ==> darà errore.
+
+# Passaggio per referenza
+double a;
+double& b = a; // da qui "b" è un alias di "a"
+
+```cpp
+void swap(int& a, int& b){
+  int c;
+  c = a;
+  a = b;
+  b = c;
+}
+
+// Posso fare "swap(x + 1, y - 1)" ???
+```
+
+Contare le linee di un file:
+```bash
+wc -l <nome-file>
+```

@@ -1,3 +1,0 @@
-/home/sasha/git/pel2324/cmake-build-debug/CMakeFiles/pel2324.dir
-/home/sasha/git/pel2324/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sasha/git/pel2324/cmake-build-debug/CMakeFiles/rebuild_cache.dir
