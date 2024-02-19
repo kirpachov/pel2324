@@ -55,3 +55,12 @@ Contare le linee di un file:
 ```bash
 wc -l <nome-file>
 ```
+
+if (cond) {} // Deve contenere un espressione booleana
+
+switch(<expr>){} // expr deve essere numerico
+
+Importante mettere il "break;" all'interno dello switch, altrimenti dal primo match eseguirà tutte le istruzioni sotto.
+
+
+Mai usare il break ed il continue
