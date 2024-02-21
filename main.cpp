@@ -47,12 +47,4 @@ int main() {
 	// es19feb24_1();
 	// pattern_esistenziale();
 	pattern_universale();
-
-	//for(int i = 0; i < 10; i++){
-	//	if (i % 2 == 0) continue;
-
-      	//	std::cout << "n " << i << std::endl;
-	//}
-
-  return 0;
 }
