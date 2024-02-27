@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 // Esercizio 19 feb 24
 // Leggere una sequenza di int che termina quando vengono inseriti 2 numeri uguali consecutivi
@@ -42,9 +43,30 @@ void pattern_universale(void){
 	if (risp) std::cout << "si" << std::endl;
 }
 
+/**
+  * Verify if all columns of a matrix have the same sum
+  * Note: method not tested.
+  */
+bool test26feb24(const std::vector<std::vector<int>> &matrix){
+  std::vector<int> sums(matrix.size());
+
+  for(int i = 0; i < matrix.size(); i++)
+    for(int j = 0; j < matrix.at(0).size(); j++)
+      sums.at(j) += matrix.at(i).at(j);
+
+  bool equals = true;
+
+  for(int i = 1; i < sums.size(); i++)
+    if (sums.at(i) != sums.at(0))
+      equals = false;
+
+  return equals;
+}
+
 int main() {
 
 	// es19feb24_1();
 	// pattern_esistenziale();
-	pattern_universale();
+	//pattern_universale();
+  return 0;
 }
