@@ -11,22 +11,19 @@
 */
 
 int smallest_pattern(std::string string){
-  // std::cout << "string: " << string << std::endl;
   if (string.length() <= 1) return 1;
   if (string.length() == 2) return string.at(0) == string.at(1) ? 1 : 2;
 
-  for(int i = string.length(); i > 0; i--){
+  // /2 ???
+  for(int i = string.length() - 1; i > 0; i--){
     if (string.length() % i != 0) continue;
 
     int piece_size = string.length() / i;
     std::string i_str = string.substr(0, piece_size);
-    // std::cout << "i_str: " << i_str << std::endl;
     
     for(int j = 1; j < string.length() / piece_size; j++){
       std::string j_str = string.substr(piece_size * j, piece_size);
 
-      // std::cout << "j_str: " << j_str << std::endl;
-      
       if (i_str != j_str) j = string.length() / piece_size;
       else if (j == i - 1) return smallest_pattern(i_str);
     }
@@ -66,51 +63,45 @@ void print_vector(std::vector<std::string> const &vec, const std::string &label)
   std::cout << label << ": \t";
   print_vector(vec);
 }
-*/
 
 int solve_case(std::string const &alphabet, std::string const &str){
-  //std::cout << "str: " << str << std::endl;
+  print_vector(alphabet, "alphabet");
+  print_vector(str, "str");
 
-  const int smallest = smallest_pattern(str);
-
-  return str.length() / smallest;
+  return 0;
 }
+*/
 
+
+/*
 int main(void){
   int cases;
   std::cin >> cases;
-  std::cin >> std::ws;
   for(int i = 0; i < cases; i++){
     std::string trash;
     std::getline(std::cin, trash, '\n');
-    // std::cout << "trash: " << trash << std::endl;
 
     std::string alphabet;
     std::getline(std::cin, alphabet, '\n');
-    // std::cout << "alphabet: " << alphabet << std::endl;
 
     std::string str;
     std::getline(std::cin, str, '\n');
-  
-    // std::cout << "str: " << str << std::endl;
   
     std::cout << solve_case(alphabet, str) << std::endl;  
   }
 
   return 0;
-}
+}*/
 
-
-/*
 void test_smallest_pattern(const std::string &input, const int expected){
   const int actual = smallest_pattern(input);
-  if (actual == expected) exit(1);
+  if (actual == expected) return;
 
   std::cout << "Test failed for input '" << input << "'. got " << actual << std::endl;
 }
 
 int main(void){
-  test_smallest_pattern("aaa", 1);
+  /*
   test_smallest_pattern("ababab", 2);
   test_smallest_pattern("abcabc", 3);
   test_smallest_pattern("bbbbbb", 1);
@@ -122,15 +113,14 @@ int main(void){
   test_smallest_pattern("ababc", 5);
   test_smallest_pattern("wassawassa", 5);  
   test_smallest_pattern("qwertyuiop", 10);
+  */
+
+  std::string in;
+  std::getline(std::cin, in);
   
-
-  //std::string in;
-  //std::getline(std::cin, in);
-  //std::cout << smallest_pattern(in) << std::endl;
-
+  std::cout << smallest_pattern(in) << std::endl;
   //test_smallest_pattern(in, 2);
 
   // test_smallest_pattern("123456", 1);
   return 0;
 }
-*/

@@ -1,4 +1,4 @@
 1
-2 8
-SF
-SSFSSSFS
+2 7
+CG
+CGCCGCC
