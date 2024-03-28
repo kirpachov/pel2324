@@ -52,9 +52,10 @@ void merge_rec(List& result, const List& l1, const List& l2, const int info2appe
 }
 
 void merge_rec(List& result, const List& l1, const List& l2){
-  if (l1 != nullptr && l2 != nullptr)
+  if (l1 != nullptr && l2 != nullptr){
     if (l1->info < l2->info) return merge_rec(result, l1->next, l2, l1->info);
     else return merge_rec(result, l1, l2->next, l2->info);
+  }
 
   if (l1 != nullptr) return merge_rec(result, l1->next, l2, l1->info);
 
