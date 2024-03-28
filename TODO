@@ -1,0 +1,3 @@
+- Leggi senza cliccare invio: applicazioni reattive realtime.
+- Che cos'è uno stream, e perché bisogna chiuderlo? Cosa succede quando chiudiamo uno stream? Una volta chiuso, quanto è complesso riaprire uno stream?
+- Quando si legge da un file, come si trova la dimensione ideale di lettura, per ottimizzare i tempi? Nel senso, nella lettura di un file qual'è il collo di bottiglia?
