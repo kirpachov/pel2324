@@ -1,3 +1,6 @@
 - Leggi senza cliccare invio: applicazioni reattive realtime.
 - Che cos'è uno stream, e perché bisogna chiuderlo? Cosa succede quando chiudiamo uno stream? Una volta chiuso, quanto è complesso riaprire uno stream?
 - Quando si legge da un file, come si trova la dimensione ideale di lettura, per ottimizzare i tempi? Nel senso, nella lettura di un file qual'è il collo di bottiglia?
+- Template: quando avviene la generazione delle varie funzioni con i vari tipi utilizzati? In fase di compilazione, o in fase di linking?
+- È possibile creare una MACRO custom?
+- Se ho un puntatore all'oggetto, quando viene istanziato? Un puntatore è solo un indirizzo di memoria. 
