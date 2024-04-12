@@ -53,6 +53,7 @@ int main(void){
   std::cout << "\n\nCASE #2\n\n" << std::endl;
   {
     std::cout << (a + b).m_value << std::endl;
+    // std::cout << (a + b) << std::endl;
   }
   std::cout << "\n\nEND CASE #2\n\n" << std::endl;
   // */
